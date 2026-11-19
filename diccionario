@@ -2,28 +2,61 @@
 
 > Explica cada columna de tu muestra para que otra persona la entienda sin preguntarte. Si no sabes algo, escribe **PENDIENTE:** y qué te falta confirmar.
 
-- **Archivo:** `datos/originales/NOMBRE.csv`
-- **Fuente y fecha de descarga:** 
-- **Cada fila es:** 
-- **Filas en la muestra:** 
-- **Campo que identifica cada fila (clave):** 
+- **Archivo:** `datos/originales/HOMICIDIO_20261117.xlsx`
+- **Fuente:** Datos suministrados porMinisterio de Defensa Nacional (https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/about_data) - MinDefensa, Bogotá D.C.
+- **Fecha de descarga:** 17 de noviembre de 2026
+- **Cada fila es:** Un hecho y cada hecho tiene al menos una víctima de homicidio.
+- **Filas en la muestra:** **PENDIENTE**
+- **Campo que identifica cada fila (clave):** El archivo no cuenta no un campo clave. Cuando se esté haciendo la manupulación de los datos, se le agregará una columna de "ID" para este propósito.
 
 ## Columnas
 
-Copia este bloque una vez por columna. Hoy, mínimo tres.
+### FECHA HECHO
+- Qué significa: Es la fecha en la que ocurrió el hecho. Se debe tener en cuenta que en mismo hecho pueden haber varias víctimas.
+- Tipo: Fecha
+- Unidad o formato: DD/MM/AAAA
+- Valores válidos: **PENDIENTE**
+- Si está vacía, significa: Se desconoce la fecha en la que ocurrió el hecho.
 
-### nombre_de_la_columna
-- Qué significa: 
-- Tipo: texto / número / fecha
-- Unidad o formato: (pesos, horas, AAAA-MM-DD…)
-- Valores válidos: (por ejemplo: de 1 a 16; «completada» o «cancelada»)
-- Si está vacía, significa: 
+### COD_DEPTO
+- Qué significa: Es el código que el DANE le otorga a cada departamento.
+- Tipo: Texto
+- Unidad o formato: Cifra de uno o dos dígitos.
+- Valores válidos: 08
+11
+18
+05
+50
+52
+66
+68
+19
+25
+27
+41
+44
+47
+76
+13
+73
+23
+17
+70
+54
+88
+63
+20
+86
+95
+85
+15
+81
+99
+91
+97
+94
+0
 
-### nombre_de_la_columna
-- Qué significa: 
-- Tipo: 
-- Unidad o formato: 
-- Valores válidos: 
 - Si está vacía, significa: 
 
 ### nombre_de_la_columna
