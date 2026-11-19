@@ -6,56 +6,67 @@ Repositorio para el desarrollo de las actividades del curso de Análisis de Dato
 
 ### 1. Usuario y decisión
 > ¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
-
 PENDIENTE
 
 ### 2. Pregunta principal
-> Una sola pregunta que ayude a tomar esa decisión.
-
 ¿En qué lugares y fecha se cometieron más homicidios en Colombia durante el año 2025?
 
 ### 3. Fuente de datos
-> Enlace o nombre de la fuente. ¿Es pública o es una muestra de práctica inventada (sintética)? Si es inventada, dilo aquí.
-
-Datos suministrados por: Ministerio de Defensa Nacional - MinDefensa, Bogotá D.C.
-Enlace: https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/about_data
+Datos públicos suministrados por el Ministerio de Defensa Nacional de Colombia - MinDefensa, Bogotá D.C.
+> Enlace: https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/about_data
 
 ### 4. Qué representa una fila
-> Completa la frase: «Cada fila es…». ¿Qué campo distingue una fila de otra?
-
-Cada fila es un hecho y cada hecho tiene al menos una víctima.
+Cada fila es un hecho y cada hecho tiene al menos una víctima de homicidio.
 
 ### 5. Periodo
-> ¿Qué fechas cubren los datos?
-
-Desde el  31/oct/2024 al 31/oct/2026.
+Los datos cubren el periodo comprendido desde el  31/oct/2024 al 31/oct/2026.
 
 ### 6. Cuatro indicadores
 > Nombre de cada indicador y, si ya puedes, cómo se calcula (qué se divide entre qué).
 
-1. Total: El total de víctimas por municipio.
-2. Promedio: (Total de víctimas por municipio)/(Total de víctimas en Colombia)
-3. Porcentaje: [(Total de víctimas por municipio)/(Total de víctimas en Colombia)]*100
-4. Variación: {[(Total de víctimas por municipio en 2026)-(Total de víctimas por municipio en 2025)]/Total de víctimas por municipio en 2025}*100
+1. **Total:** El total de víctimas por municipio.
+
+\[
+T_m = \text{Total de víctimas por municipio } m
+\]
+
+2. **Promedio:**
+
+\[
+P_m = \frac{T_m}{T_C}
+\]
+
+donde \(T_C = \text{Total de víctimas en Colombia}\).
+
+3. **Porcentaje:**
+
+\[
+\%_m = \left[ \frac{T_m}{T_C} \right] \times 100
+\]
+
+4. **Variación:**
+
+\[
+V_m = \left[ \frac{T_m^{2026} - T_m^{2025}}{T_m^{2025}} \right] \times 100
+\]
+
+donde:
+
+- \(T_m^{2026}\): total de víctimas por municipio \(m\) en 2026.
+- \(T_m^{2025}\): total de víctimas por municipio \(m\) en 2025.
 
 ### 7. Fuera de alcance
-> Lo que este proyecto NO va a responder.
-
 En este proyecto no tendremos en cuenta la hora del homicidio ni los datos sensibles de la víctima y el victimario.
 
-## Si alcanzas hoy (para el jueves es obligatorio)
-
 ### Dos comparaciones útiles
-> Por ejemplo: por mes, por comuna, por categoría.
-
-1. 
-2. 
+1. Se comparará el total de homicidios por zona rural o zona urbana.
+2. Se comparaá el total de homicidios por sexo.
 
 ### Tres riesgos de calidad
 > ¿Qué podría venir mal en los datos? ¿Qué harías si la fuente falla?
 
-1. 
-2. 
+1. Podría haber una incongruencia entre el departamento y el municipio donde ocurrió el hecho.
+2. Podrían haber datos faltantes.
 3. 
 
 ### Mapa de preguntas
