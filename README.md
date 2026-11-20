@@ -1,15 +1,16 @@
-# Equipo-E1-Analisis-de-Datos-Basico-Estud-IA-Capa-2-
+# Equipo-E1-Análisis-de-Datos-Básico-Estud-IA-Capa-2
 Repositorio para el desarrollo de las actividades del curso de Análisis de Datos Básico del programa Estud-IA 2026.
-# Nombre del proyecto
+
+# Caracterización de los homicidios en Colombia durante el periodo octubre/2024 - octubre/2025
 
 ## Ficha del proyecto · versión 1
 
 ### 1. Usuario y decisión
-> ¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
-PENDIENTE
+¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
+El resultado de este proyecto será que usado por los estudiantes del curso de Análisis de Datos Básicos del programa Estud-IA 2026, con la intención de formular un tablero que puede ser usado por las entidades públicas para tomar deciciones sobre los homicidios en Colombia.
 
 ### 2. Pregunta principal
-¿En qué lugares y fecha se cometieron más homicidios en Colombia durante el año 2025?
+¿En qué lugares y fecha se cometieron los homicidios en Colombia durante el periodo octubre/2024 - octubre/2025?
 
 ### 3. Fuente de datos
 Datos públicos suministrados por el Ministerio de Defensa Nacional de Colombia - MinDefensa, Bogotá D.C.
@@ -22,38 +23,29 @@ Cada fila es un hecho y cada hecho tiene al menos una víctima de homicidio.
 Los datos cubren el periodo comprendido desde el  31/oct/2024 al 31/oct/2026.
 
 ### 6. Cuatro indicadores
-> Nombre de cada indicador y, si ya puedes, cómo se calcula (qué se divide entre qué).
-
 1. **Total:** El total de víctimas por municipio.
 
-\[
-T_m = \text{Total de víctimas por municipio } m
-\]
+$$T_m = \text{Total de víctimas por municipio } m$$
 
 2. **Promedio:**
 
-\[
-P_m = \frac{T_m}{T_C}
-\]
+$$P_m = \frac{T_m}{T_C}$$
 
-donde \(T_C = \text{Total de víctimas en Colombia}\).
+$$donde \ T_C = \text{Total de víctimas en Colombia}$$
 
 3. **Porcentaje:**
 
-\[
-\%_m = \left[ \frac{T_m}{T_C} \right] \times 100
-\]
+$$\%_m = \left[ \frac{T_m}{T_C} \right] \times 100$$
 
 4. **Variación:**
 
-\[
-V_m = \left[ \frac{T_m^{2026} - T_m^{2025}}{T_m^{2025}} \right] \times 100
-\]
+$$V_m = \left[ \frac{T_m^{2026} - T_m^{2025}}{T_m^{2025}} \right] \times 100$$
 
 donde:
 
-- \(T_m^{2026}\): total de víctimas por municipio \(m\) en 2026.
-- \(T_m^{2025}\): total de víctimas por municipio \(m\) en 2025.
+- $T_m^{2026}$ : total de víctimas por municipio \(m\) en 2026.
+
+- $T_m^{2025}$ :  total de víctimas por municipio \(m\) en 2025.
 
 ### 7. Fuera de alcance
 En este proyecto no tendremos en cuenta la hora del homicidio ni los datos sensibles de la víctima y el victimario.
@@ -63,13 +55,11 @@ En este proyecto no tendremos en cuenta la hora del homicidio ni los datos sensi
 2. Se comparaá el total de homicidios por sexo.
 
 ### Tres riesgos de calidad
-> ¿Qué podría venir mal en los datos? ¿Qué harías si la fuente falla?
-
 1. Podría haber una incongruencia entre el departamento y el municipio donde ocurrió el hecho.
 2. Podrían haber datos faltantes.
-3. 
+3. **FALTANTE**
 
-### Mapa de preguntas
+### Mapa de preguntas **FALTANTE**
 - ¿Qué pasó?
 - ¿Dónde o cuándo es distinto?
 - ¿Qué recomendaría y con qué límites?
