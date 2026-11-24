@@ -24,6 +24,18 @@ El formato de cada entrada debe ser el siguiente:
 
 ## Inicio de changelog
 
+### 2026-11-23
+
+#### Agregado
+- Se agrega el archivo `HOMICIDIO_20261123.csv` a `datos/originales`.
+
+#### Cambiado
+- Se realizan cambios en el `README.md` general teniendo en cuenta las observaciones del profesor: se ajusta el periodo a estudiar, se corrigen errores tipográficos, se actualizan los enlaces al `CHANGELOG.md`.
+- Se actualiza el `datos/originales/README.md` con la fecha de descarga del archivo, los filtros aplicados y el número total de filas.
+
+#### Eliminado
+- Se elimina el archivo `HOMICIDIO_20261117.xlsx` ya que no es el archivo correcto.
+
 ### 2026-11-22
 
 #### Agregado
