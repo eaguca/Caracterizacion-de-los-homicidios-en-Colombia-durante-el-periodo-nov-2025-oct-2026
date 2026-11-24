@@ -1,13 +1,12 @@
-# Equipo-E1-Análisis-de-Datos-Básico-Estud-IA-Capa-2
-Repositorio para el desarrollo de las actividades del curso de Análisis de Datos Básico del programa Estud-IA 2026.
-
 # Caracterización de los homicidios en Colombia durante el periodo octubre/2024 - octubre/2025
+
+Equipo E1 · Análisis de Datos Básico · Estud-IA (Capa 2)
+Repositorio para el desarrollo de las actividades del curso de Análisis de Datos Básico del programa Estud-IA 2026.
 
 ## Ficha del proyecto · versión 1
 
 ### 1. Usuario y decisión
-¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
-El resultado de este proyecto será que usado por los estudiantes del curso de Análisis de Datos Básicos del programa Estud-IA 2026, con la intención de formular un tablero que puede ser usado por las entidades públicas para tomar deciciones sobre los homicidios en Colombia.
+El resultado de este proyecto puede ser usado por las entidades públicas para tomar deciciones sobre los homicidios en Colombia y formular políticas de seguridad.
 
 ### 2. Pregunta principal
 ¿En qué lugares y fecha se cometieron los homicidios en Colombia durante el periodo octubre/2024 - octubre/2025?
@@ -17,27 +16,27 @@ Datos públicos suministrados por el Ministerio de Defensa Nacional de Colombia 
 > Enlace: https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/about_data
 
 ### 4. Qué representa una fila
-Cada fila es un hecho y cada hecho tiene al menos una víctima de homicidio.
+Cada fila es un hecho y cada hecho tiene al menos una víctima de homicidio. Nos enfocaremos en el total de víctimas.
 
 ### 5. Periodo
-Los datos cubren el periodo comprendido desde el  31/oct/2024 al 31/oct/2026.
+Los datos cubren el periodo comprendido desde el  31/oct/2024 al 31/oct/2026 pero nos enfocaremos en los datos comprendidos desde el 31/oct/2025 - 31/oct/2026. Solo se amplía la base de datos para poder calcular la tasa de crecimiento respecto al mismo periodo del año anterior.
 
 ### 6. Cuatro indicadores
-1. **Total:** El total de víctimas por municipio.
+#### i) Total: El total de víctimas por municipio.
 
 $$T_m = \text{Total de víctimas por municipio } m$$
 
-2. **Promedio:**
+#### ii) Promedio:
 
 $$P_m = \frac{T_m}{T_C}$$
 
 $$donde \ T_C = \text{Total de víctimas en Colombia}$$
 
-3. **Porcentaje:**
+#### iii) Porcentaje respecto del total:
 
 $$\%_m = \left[ \frac{T_m}{T_C} \right] \times 100$$
 
-4. **Variación:**
+#### iv) Variación:
 
 $$V_m = \left[ \frac{T_m^{2026} - T_m^{2025}}{T_m^{2025}} \right] \times 100$$
 
@@ -54,10 +53,9 @@ En este proyecto no tendremos en cuenta la hora del homicidio ni los datos sensi
 1. Se comparará el total de homicidios por zona rural o zona urbana.
 2. Se comparaá el total de homicidios por sexo.
 
-### Tres riesgos de calidad
+### Riesgos de calidad
 1. Podría haber una incongruencia entre el departamento y el municipio donde ocurrió el hecho.
 2. Podrían haber datos faltantes.
-3. **FALTANTE**
 
 ### Mapa de preguntas **FALTANTE**
 - ¿Qué pasó?
