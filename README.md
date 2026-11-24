@@ -1,4 +1,4 @@
-# Caracterización de los homicidios en Colombia durante el periodo octubre/2024 - octubre/2025
+# Caracterización de los homicidios en Colombia durante el periodo noviembre/2025 - octubre/2026
 
 Equipo E1 · Análisis de Datos Básico · Estud-IA (Capa 2)
 Repositorio para el desarrollo de las actividades del curso de Análisis de Datos Básico del programa Estud-IA 2026.
@@ -6,10 +6,10 @@ Repositorio para el desarrollo de las actividades del curso de Análisis de Dato
 ## Ficha del proyecto · versión 1
 
 ### 1. Usuario y decisión
-El resultado de este proyecto puede ser usado por las entidades públicas para tomar deciciones sobre los homicidios en Colombia y formular políticas de seguridad.
+El resultado de este proyecto puede ser usado por las entidades públicas para tomar decisiones sobre los homicidios en Colombia y formular políticas de seguridad.
 
 ### 2. Pregunta principal
-¿En qué lugares y fecha se cometieron los homicidios en Colombia durante el periodo octubre/2024 - octubre/2025?
+¿En qué lugares y fecha se cometieron los homicidios en Colombia durante el periodo noviembre/2025 - octubre/2026?
 
 ### 3. Fuente de datos
 Datos públicos suministrados por el Ministerio de Defensa Nacional de Colombia - MinDefensa, Bogotá D.C.
@@ -19,10 +19,11 @@ Datos públicos suministrados por el Ministerio de Defensa Nacional de Colombia 
 Cada fila es un hecho y cada hecho tiene al menos una víctima de homicidio. Nos enfocaremos en el total de víctimas.
 
 ### 5. Periodo
-Los datos cubren el periodo comprendido desde el  31/oct/2024 al 31/oct/2026 pero nos enfocaremos en los datos comprendidos desde el 31/oct/2025 - 31/oct/2026. Solo se amplía la base de datos para poder calcular la tasa de crecimiento respecto al mismo periodo del año anterior.
+Los datos cubren el periodo comprendido desde el  01/noviembre/2024 al 31/octubre/2026 pero nos enfocaremos en los datos comprendidos desde el 01/noviembre/2025 - 31/octubre/2026. Solo se amplía la base de datos para poder calcular la tasa de crecimiento respecto al mismo periodo del año anterior.
 
 ### 6. Cuatro indicadores
-#### i) Total: El total de víctimas por municipio.
+#### i) Total: 
+El total de víctimas por municipio.
 
 $$T_m = \text{Total de víctimas por municipio } m$$
 
@@ -34,24 +35,25 @@ $$donde \ T_C = \text{Total de víctimas en Colombia}$$
 
 #### iii) Porcentaje respecto del total:
 
-$$\%_m = \left[ \frac{T_m}{T_C} \right] \times 100$$
-
+```math
+\%_m = \left[ \frac{T_m}{T_C} \right] \times 100
+```
 #### iv) Variación:
 
-$$V_m = \left[ \frac{T_m^{2026} - T_m^{2025}}{T_m^{2025}} \right] \times 100$$
+$$V_m = \left[ \frac{T_m^{actual} - T_m^{anterior}}{T_m^{anterior}} \right] \times 100$$
 
 donde:
 
-- $T_m^{2026}$ : total de víctimas por municipio \(m\) en 2026.
+- $T_m^{actual}$ : total de víctimas por municipio \(m\) del 1 de noviembre de 2025 al 31 de octubre de 2026.
 
-- $T_m^{2025}$ :  total de víctimas por municipio \(m\) en 2025.
+- $T_m^{anterior}$ :  total de víctimas por municipio \(m\) del 1 de noviembre de 2024 al 31 de octubre de 2025.
 
 ### 7. Fuera de alcance
 En este proyecto no tendremos en cuenta la hora del homicidio ni los datos sensibles de la víctima y el victimario.
 
 ### Dos comparaciones útiles
 1. Se comparará el total de homicidios por zona rural o zona urbana.
-2. Se comparaá el total de homicidios por sexo.
+2. Se comparará el total de homicidios por sexo.
 
 ### Riesgos de calidad
 1. Podría haber una incongruencia entre el departamento y el municipio donde ocurrió el hecho.
@@ -67,7 +69,7 @@ En este proyecto no tendremos en cuenta la hora del homicidio ni los datos sensi
 | Archivo o carpeta | Qué contiene |
 |---|---|
 | [diccionario.md](diccionario.md) | Qué significa cada columna de la muestra |
-| [bitacora.md](bitacora.md) | Decisiones y por qué; uso de IA |
+| [CHANGELOG .md](CHANGELOG.md) | Decisiones y por qué; uso de IA |
 | `datos/originales/` | La muestra tal como se descargó (no se modifica) |
 | `consultas/` | Consultas SQL comentadas (sesión 3) |
 | `notebooks/` | Cuadernos de Colab (sesiones 3 a 5) |
