@@ -1,15 +1,14 @@
--- Pregunta: ¿Cuántos hechos categorizados como feminicidio hay en la base de datos?
--- Datos: datos/originales/HOMICIDIO_20261117.xlsx
--- Cifra de control: 346287 filas en total y 1932 después del filtro
-SELECT COUNT(*) AS filas_filtradas
+-- Pregunta: ¿Cuántos hechos occurieron durante el año 2025?
+-- Datos: datos/originales/HOMICIDIO_20261123.csv
+-- Cifra de control: 27801 filas en total y 13981 después del filtro
+SELECT COUNT(*) AS filas
 FROM datos
-WHERE SPOA_CARACTERIZACION = 'FEMINICIDIO'
+WHERE strptime("FECHA HECHO", '%d/%m/%Y') BETWEEN '2025-01-01' AND '2025-12-31';
 
   
--- Pregunta: ¿En qué fecha y lugar se cometieron los feminicidios?
--- Datos: datos/originales/HOMICIDIO_20261117.xlsx
--- Cifra de control: 346287 filas en total y 1932 después del filtro
-SELECT "FECHA HECHO", DEPARTAMENTO, COD_MUNI,
+-- Pregunta: ¿Cuántas víctimas de homicidio hubo durante 2025?
+-- Datos: datos/originales/HOMICIDIO_20261123.csv
+-- Cifra de control: 13981 filas en total y 14038 después del filtro, lo cual tiene sentido porque hay hechos en los que hubo más de una víctima.
+SELECT SUM(cantidad)
 FROM datos
-WHERE SPOA_CARACTERIZACION = 'FEMINICIDIO'
-LIMIT 10
+WHERE strptime("FECHA HECHO", '%d/%m/%Y') BETWEEN '2025-01-01' AND '2025-12-31';
