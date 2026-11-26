@@ -24,6 +24,11 @@ El formato de cada entrada debe ser el siguiente:
 
 ## Inicio de changelog
 
+### 2026-11-25
+
+#### Agregado
+- Se agrega el archivo `consultas/03_calidad.sql`. Se usa la ayuda de de la IA Gemini para ajustar el formato de tiempo de las consultas.
+
 ### 2026-11-23
 
 #### Agregado
