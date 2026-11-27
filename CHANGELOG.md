@@ -24,6 +24,14 @@ El formato de cada entrada debe ser el siguiente:
 
 ## Inicio de changelog
 
+### 2026-11_26
+
+#### Agregado
+- Se adjunta la bases de datos limpia `datos/limpios/HOMICIDIOS_limpio.csv`.
+- Se agrega el archivo `datos/limpios/README.md` con el registro y la descripción de los cambios realizados en el proceso de limpieza.
+- Se adjunta la base de datos de datos por revisar `datos/revisar/HOMICIDIOS_revision.csv`
+- Se agrega el archivo `datos/revisar/README.md` con la descripción de los datos que se deben revisar.
+
 ### 2026-11-25
 
 #### Agregado
